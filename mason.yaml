@@ -1,0 +1,3 @@
+bricks:
+  bloc: ^0.4.0
+  cubit: ^0.3.0
