@@ -53,7 +53,8 @@ class AppDrawer extends StatelessWidget {
             ),
             ListTile(
               selected: currentRoute == 'pos',
-              selectedTileColor: AppColors.secondary.withOpacity(0.5),
+              // ignore: deprecated_member_use
+              selectedTileColor: AppColors.secondary.withValues(alpha: 0.5),
               leading: const Icon(
                 Icons.point_of_sale_rounded,
                 color: AppColors.primary,
@@ -77,7 +78,7 @@ class AppDrawer extends StatelessWidget {
             ),
             ListTile(
               selected: currentRoute == 'products',
-              selectedTileColor: AppColors.secondary.withOpacity(0.5),
+              selectedTileColor: AppColors.secondary.withValues(alpha: 0.5),
               leading: const Icon(
                 Icons.inventory_2_rounded,
                 color: AppColors.primary,
@@ -101,7 +102,7 @@ class AppDrawer extends StatelessWidget {
             ),
             ListTile(
               selected: currentRoute == 'reports',
-              selectedTileColor: AppColors.secondary.withOpacity(0.5),
+              selectedTileColor: AppColors.secondary.withValues(alpha: 0.5),
               leading: const Icon(
                 Icons.receipt_long_rounded,
                 color: AppColors.primary,
@@ -125,7 +126,7 @@ class AppDrawer extends StatelessWidget {
             ),
             ListTile(
               selected: currentRoute == 'settings',
-              selectedTileColor: AppColors.secondary.withOpacity(0.5),
+              selectedTileColor: AppColors.secondary.withValues(alpha: 0.5),
               leading: const Icon(
                 Icons.settings_rounded,
                 color: AppColors.primary,
